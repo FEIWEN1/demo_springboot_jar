@@ -42,6 +42,7 @@ public class QuickSort {
                 if(i==partIndex){
                     partIndex++;
                 }else{
+
                     int tmp=arrs[i];
                     arrs[i]=arrs[partIndex];
                     arrs[partIndex]=tmp;
