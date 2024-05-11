@@ -1,6 +1,8 @@
 package com.dingzhi.demo_springboot_jar.leecode.sort;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.TreeMap;
 
 /**
  * @author feiwen
@@ -58,10 +60,28 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int[] a = {3, 1, 7, 0, 4, 3, 2, 8};
-//        int[] a = {6, 11, 3, 8, 9};
-        sort(a, 0, 7);
-        System.out.println(Arrays.toString(a));
+//        int[] a = {3, 1, 7, 0, 4, 3, 2, 8};
+////        int[] a = {6, 11, 3, 8, 9};
+//        sort(a, 0, 7);
+//        System.out.println(Arrays.toString(a));
+        TreeMap<Double,String> map=new TreeMap<>();
+        map.put(4.0, "d");
+        map.put(1.0,"a");
+        map.put(2.0,"b");
+        map.put(3.0, "c");
+        map.put(5.0, "e");
+        Double[] arrs = map.keySet().toArray(new Double[0]);
+        System.out.println(Arrays.toString(arrs));
+
+        HashMap<Double,String> map1=new HashMap<>();
+        map1.put(4.0, "d");
+        map1.put(1.0,"a");
+        map1.put(2.0,"b");
+        map1.put(3.0, "c");
+        map1.put(5.0, "e");
+        Double[] arrs1 = map1.keySet().toArray(new Double[0]);
+        System.out.println(Arrays.toString(arrs1));
+
     }
 
 }
